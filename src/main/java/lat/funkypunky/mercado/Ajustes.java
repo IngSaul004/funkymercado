@@ -31,6 +31,8 @@ final class Ajustes {
     final String zonaMundo;
     final int minX, minY, minZ, maxX, maxY, maxZ;
     final int cantidad;
+    final boolean velocidadActiva;
+    final int velocidadNivel;
     final Map<String, Categoria> categorias;
     private final ConfigurationSection mensajes;
 
@@ -61,6 +63,8 @@ final class Ajustes {
         maxZ = Math.max(a.get(2), b.get(2));
 
         cantidad = Math.max(1, Math.min(64, c.getInt("cantidad", 64)));
+        velocidadActiva = c.getBoolean("velocidad.activa", true);
+        velocidadNivel = Math.max(1, Math.min(5, c.getInt("velocidad.nivel", 2)));
         mensajes = c.getConfigurationSection("mensajes");
 
         Map<String, Categoria> cats = new LinkedHashMap<>();

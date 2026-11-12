@@ -6,6 +6,7 @@ Tienda de decoración del mercado de **FUNKY PUNKY MC** (Paper 26.3, Java 25).
 - Precio techo a propósito: la tienda del servidor es el último recurso; lo normal es comprar en los puestos de los jugadores.
 - Solo funciona **dentro del mercado** (caja `zona` del config = región `mercado` de WorldGuard).
 - Revisa espacio y saldo **antes** de cobrar; confirmación antes de cada compra.
+- **Velocidad II dentro del mercado** (1.1): se renueva cada segundo y al salir se acaba sola; no quita otros efectos.
 
 ## Comandos
 | Comando | Permiso | Qué hace |

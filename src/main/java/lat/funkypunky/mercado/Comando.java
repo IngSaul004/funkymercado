@@ -57,6 +57,8 @@ final class Comando implements TabExecutor {
                 ? "&f" + a.zonaMundo + " (" + a.minX + ", " + a.minY + ", " + a.minZ + ") → ("
                 + a.maxX + ", " + a.maxY + ", " + a.maxZ + ")"
                 : "&eapagada (se compra en cualquier lugar)")));
+        s.sendMessage(Texto.c("&7Velocidad en el mercado: " + (a.velocidadActiva && a.zonaActiva
+                ? "&anivel " + a.velocidadNivel : "&eapagada")));
         for (Ajustes.Categoria c : a.categorias.values()) {
             s.sendMessage(Texto.c("&7- &d" + c.clave() + "&7: " + c.familias().size() + " familias"));
             for (Ajustes.Familia f : c.familias().values()) {

@@ -15,6 +15,12 @@ zona:
   min: [-160, -64, -640]
   max: [47, 112, -417]
 
+# Velocidad dentro de la zona del mercado (supervivencia y aventura).
+# Se renueva cada segundo por 2 s: al salir se acaba sola. No quita efectos de pociones ni de la ruleta.
+velocidad:
+  activa: true
+  nivel: 2
+
 # Cuántos bloques trae cada compra (un stack).
 cantidad: 64
 

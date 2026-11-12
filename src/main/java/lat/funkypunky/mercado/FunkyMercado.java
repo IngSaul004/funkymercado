@@ -30,6 +30,7 @@ public final class FunkyMercado extends JavaPlugin {
             }
         }
         getServer().getPluginManager().registerEvents(tienda, this);
+        getServer().getScheduler().runTaskTimer(this, new Velocidad(this), 40L, 20L); // cada segundo
 
         // La economía la registra Essentials al arrancar: se revisa cuando ya cargaron todos los plugins.
         getServer().getScheduler().runTask(this, () -> {
