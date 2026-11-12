@@ -161,6 +161,54 @@ categorias:
           - MAGENTA_STAINED_GLASS_PANE
           - PINK_STAINED_GLASS_PANE
 
+  iluminacion:
+    titulo: '&e&lIluminación'
+    icono: LANTERN
+    precio: 200
+    familias:
+      faroles:
+        nombre: '&eFaroles'
+        icono: LANTERN
+        productos:
+          - LANTERN
+          - SOUL_LANTERN
+          - COPPER_LANTERN
+      velas:
+        nombre: '&eVelas'
+        icono: CANDLE
+        productos:
+          - CANDLE
+          - WHITE_CANDLE
+          - LIGHT_GRAY_CANDLE
+          - GRAY_CANDLE
+          - BLACK_CANDLE
+          - BROWN_CANDLE
+          - RED_CANDLE
+          - ORANGE_CANDLE
+          - YELLOW_CANDLE
+          - LIME_CANDLE
+          - GREEN_CANDLE
+          - CYAN_CANDLE
+          - LIGHT_BLUE_CANDLE
+          - BLUE_CANDLE
+          - PURPLE_CANDLE
+          - MAGENTA_CANDLE
+          - PINK_CANDLE
+      especiales:
+        nombre: '&eLuces especiales'
+        icono: SEA_LANTERN
+        # Mas dificiles de conseguir (monumento, Nether, End, ranas): precio techo mas alto.
+        precio: 400
+        productos:
+          - SEA_LANTERN
+          - OCHRE_FROGLIGHT
+          - VERDANT_FROGLIGHT
+          - PEARLESCENT_FROGLIGHT
+          - SHROOMLIGHT
+          - GLOWSTONE
+          - END_ROD
+          - REDSTONE_LAMP
+
 mensajes:
   prefijo: '&d&lMERCADO &8» '
   solo-mercado: '&fLa tienda solo funciona &ddentro del mercado&f. Usa &d/tienda&f.'
