@@ -1,0 +1,24 @@
+name: FunkyMercado
+version: '${version}'
+main: lat.funkypunky.mercado.FunkyMercado
+api-version: '26.1'
+description: Tienda de decoración del mercado de FUNKY PUNKY MC (solo vende; el dinero sale de la economía).
+authors: [SAULPLAY112]
+softdepend: [Vault, Essentials]
+
+commands:
+  deco:
+    description: Abre la tienda de decoración del mercado.
+    usage: /deco [categoria]
+    aliases: [decoracion]
+  fmercado:
+    description: Administración de FunkyMercado.
+    usage: /fmercado <info|recargar>
+
+permissions:
+  funkymercado.usar:
+    description: Abrir la tienda de decoración y comprar.
+    default: true
+  funkymercado.admin:
+    description: Ver info y recargar el config.
+    default: op
